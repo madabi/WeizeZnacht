@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70AF40691EF68EE0001A9665 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 70AF40681EF68EE0001A9665 /* Podfile */; };
+		A41E3258915C8E0EE3F98C63 /* libPods-WeizeZnacht.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 916BCC7BC92E81C17074E796 /* libPods-WeizeZnacht.a */; };
 		A9BE5BB91EF6856200B47EF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BE5BB81EF6856200B47EF1 /* AppDelegate.swift */; };
 		A9BE5BBB1EF6856200B47EF1 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BE5BBA1EF6856200B47EF1 /* FirstViewController.swift */; };
 		A9BE5BBD1EF6856200B47EF1 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BE5BBC1EF6856200B47EF1 /* SecondViewController.swift */; };
@@ -16,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		70AF40681EF68EE0001A9665 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		804FC81FDCD8D1E2386B4AF7 /* Pods-WeizeZnacht.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeizeZnacht.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeizeZnacht/Pods-WeizeZnacht.debug.xcconfig"; sourceTree = "<group>"; };
+		916BCC7BC92E81C17074E796 /* libPods-WeizeZnacht.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeizeZnacht.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9BE5BB51EF6856200B47EF1 /* WeizeZnacht.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeizeZnacht.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9BE5BB81EF6856200B47EF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9BE5BBA1EF6856200B47EF1 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		A9BE5BC11EF6856200B47EF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9BE5BC41EF6856200B47EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9BE5BC61EF6856200B47EF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F19476B993F721DD6F488BDA /* Pods-WeizeZnacht.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeizeZnacht.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeizeZnacht/Pods-WeizeZnacht.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A41E3258915C8E0EE3F98C63 /* libPods-WeizeZnacht.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		696200CBCCE9BAAA024ACF59 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				804FC81FDCD8D1E2386B4AF7 /* Pods-WeizeZnacht.debug.xcconfig */,
+				F19476B993F721DD6F488BDA /* Pods-WeizeZnacht.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7321CD54E92DFF86EE14D2C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				916BCC7BC92E81C17074E796 /* libPods-WeizeZnacht.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A9BE5BAC1EF6856200B47EF1 = {
 			isa = PBXGroup;
 			children = (
+				70AF40681EF68EE0001A9665 /* Podfile */,
 				A9BE5BB71EF6856200B47EF1 /* WeizeZnacht */,
 				A9BE5BB61EF6856200B47EF1 /* Products */,
+				696200CBCCE9BAAA024ACF59 /* Pods */,
+				7321CD54E92DFF86EE14D2C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9BE5BC91EF6856300B47EF1 /* Build configuration list for PBXNativeTarget "WeizeZnacht" */;
 			buildPhases = (
+				340776D67E6960F8C444F0B1 /* [CP] Check Pods Manifest.lock */,
 				A9BE5BB11EF6856200B47EF1 /* Sources */,
 				A9BE5BB21EF6856200B47EF1 /* Frameworks */,
 				A9BE5BB31EF6856200B47EF1 /* Resources */,
+				548E9D79501F292FA7717C78 /* [CP] Embed Pods Frameworks */,
+				A2A5AB05626678A59F40FCB6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,11 +159,60 @@
 			files = (
 				A9BE5BC51EF6856200B47EF1 /* LaunchScreen.storyboard in Resources */,
 				A9BE5BC21EF6856200B47EF1 /* Assets.xcassets in Resources */,
+				70AF40691EF68EE0001A9665 /* Podfile in Resources */,
 				A9BE5BC01EF6856200B47EF1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		340776D67E6960F8C444F0B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		548E9D79501F292FA7717C78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeizeZnacht/Pods-WeizeZnacht-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2A5AB05626678A59F40FCB6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeizeZnacht/Pods-WeizeZnacht-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A9BE5BB11EF6856200B47EF1 /* Sources */ = {
@@ -263,6 +342,7 @@
 		};
 		A9BE5BCA1EF6856300B47EF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 804FC81FDCD8D1E2386B4AF7 /* Pods-WeizeZnacht.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V5QNM5ZAW9;
@@ -276,6 +356,7 @@
 		};
 		A9BE5BCB1EF6856300B47EF1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F19476B993F721DD6F488BDA /* Pods-WeizeZnacht.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V5QNM5ZAW9;
@@ -306,6 +387,7 @@
 				A9BE5BCB1EF6856300B47EF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
